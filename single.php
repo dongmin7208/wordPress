@@ -109,6 +109,7 @@
 
     <hr>
   <?php endwhile; ?>
+
   <?php get_template_part('includes/footer'); ?>
 
   <!-- Footer -->
