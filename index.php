@@ -72,21 +72,20 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <?php $lists = have_posts(); ?>
-        <?php if ($lists) : ?>
+        <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
             <div class="post-preview">
-              <a href="post.html">
+              <a href="<?php the_permalink(); ?>">
                 <h2 class="post-title">
                   <?php the_title(); ?>
                 </h2>
                 <h3 class="post-subtitle">
-                  Problems look mighty small from 150 miles up
+                  <?php the_excerpt(); ?>
                 </h3>
               </a>
               <p class="post-meta">Posted by
                 <a href="#">Start Bootstrap</a>
-                on <?php the_date(); ?>
+                on <?php the_time(get_option('date_format')); ?>
               </p>
             </div>
             <hr>
@@ -136,18 +135,14 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020222</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
+  <?php get_footer(); ?>
 
 </body>
 
