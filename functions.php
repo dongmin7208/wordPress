@@ -6,6 +6,7 @@ add_action('init', function () {
     //メニューをサポート
     register_nav_menus([
         'global_nav' => 'グローバルナビゲーション',
+        'footer_nav' => 'フッターナビゲーション',
     ]);
 });
 
