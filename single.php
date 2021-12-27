@@ -36,7 +36,7 @@
             <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
             <span class="meta">Posted by
               <?php the_author(); ?>
-              on August 24, 2019</span>
+              on <?php the_date(); ?></span>
           </div>
         </div>
       </div>
