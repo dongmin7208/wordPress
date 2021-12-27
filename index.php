@@ -43,7 +43,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Tag <?php echo date('Y'); ?> </h1>
+            <h1>Category <?php echo date('Y'); ?> </h1>
             <span class="subheading">プログ名 <?php wp_title(); ?></span>
           </div>
         </div>
