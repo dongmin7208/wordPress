@@ -76,7 +76,10 @@
 
           <!-- Pager -->
           <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+            <a class="btn btn-primary float-left" href="#">&rarr; 新しい記事へ</a>
+            <a class="btn btn-primary float-right" href="#">古い記事へ &rarr;</a>
+            <?php next_posts_link('古い記事へ &rarr;'); ?>
+
           </div>
         <?php else : ?>
           <p>記事が見つかりませんでした。</p>

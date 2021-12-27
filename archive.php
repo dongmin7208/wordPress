@@ -21,6 +21,8 @@
               <h1>Category</h1>
             <?php elseif (is_author()) : ?>
               <h1>Author</h1>
+            <?php elseif (is_date()) : ?>
+              <h1>Date</h1>
             <?php else : ?>
               <h1>Tag</h1>
             <?php endif; ?>
